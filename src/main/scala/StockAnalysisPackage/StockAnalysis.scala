@@ -15,8 +15,8 @@ object StockAnalysis extends Stock{
     val end_date = runtimeParameters.end_Date
     val sectors= runtimeParameters.sector
 
-    spark.sparkContext.hadoopConfiguration.set("fs.s3n.awsAccessKeyId", "AKIAU5VVQRUEX32TGAL3")
-    spark.sparkContext.hadoopConfiguration.set("fs.s3n.awsSecretAccessKey ", "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")
+    spark.sparkContext.hadoopConfiguration.set("fs.s3n.awsAccessKeyId", "")
+    spark.sparkContext.hadoopConfiguration.set("fs.s3n.awsSecretAccessKey ", "")
     spark.sparkContext.hadoopConfiguration.set("com.amazonaws.services.s3.enableV4", "true")
     spark.sparkContext.hadoopConfiguration.set("fs.s3n.endpoint", "s3.ap-south-1.amazonaws.com")
     spark.sparkContext.hadoopConfiguration.set("fs.s3n.impl", "org.apache.hadoop.fs.s3native.NativeS3FileSystem")
